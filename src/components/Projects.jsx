@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import sanityClient from "../client";
 
 export default function Projects() {
@@ -32,7 +31,7 @@ export default function Projects() {
               const { title, link, description } = project;
               return (
                 <li key={index}>
-                  <a href={link}>
+                  <a href={link} target="_blank" rel="noreferrer">
                     <div class="on-hover-40 hide-text-block work-block">
                       <h2 class="text-color-white">{title}</h2>
                       <p class="size-small text-color-red">{description}</p>

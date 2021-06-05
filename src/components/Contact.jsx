@@ -41,6 +41,7 @@ export default function Contact() {
                 class="on-hover-40 text-color-red"
                 href="https://www.facebook.com/mohit.shahu.566/"
                 target="_blank"
+                rel="noreferrer"
               >
                 Facebook
               </a>
@@ -48,6 +49,7 @@ export default function Contact() {
                 class="on-hover-40 text-color-red"
                 href="https://www.instagram.com/shahu.mohit/"
                 target="_blank"
+                rel="noreferrer"
               >
                 Instagram
               </a>
@@ -55,6 +57,7 @@ export default function Contact() {
                 class="on-hover-40 text-color-red"
                 href="https://twitter.com/MohitSh16609286"
                 target="_blank"
+                rel="noreferrer"
               >
                 Twitter
               </a>
@@ -62,6 +65,7 @@ export default function Contact() {
                 class="on-hover-40 text-color-red"
                 href="https://www.linkedin.com/in/mohit-shahu-b712a7198/"
                 target="_blank"
+                rel="noreferrer"
               >
                 Linkedin
               </a>
