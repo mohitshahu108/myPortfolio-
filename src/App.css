@@ -473,7 +473,7 @@ video {
 }
 @media screen and (max-width: 480px) {
   .bg-photo {
-    left: -8%;
+    left: -18%;
   }
 }
 

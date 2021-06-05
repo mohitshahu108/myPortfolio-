@@ -32,12 +32,12 @@ export default function Projects() {
               const { title, link, description } = project;
               return (
                 <li key={index}>
-                  <Link>
+                  <a href={link}>
                     <div class="on-hover-40 hide-text-block work-block">
                       <h2 class="text-color-white">{title}</h2>
                       <p class="size-small text-color-red">{description}</p>
                     </div>
-                  </Link>
+                  </a>
                 </li>
               );
             })}
