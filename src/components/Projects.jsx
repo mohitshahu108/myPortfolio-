@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import sanityClient from "../client";
 
 export default function Projects() {
+  const [projectData, setProjectData] = useState([]);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == 'project']{
+      title, link, description
+    }`
+      )
+      .then((data) => setProjectData(data))
+      .catch(console.error);
+  }, []);
+  console.log(projectData);
   return (
     <>
       <div class="max-width max-width-70">
@@ -12,12 +27,21 @@ export default function Projects() {
           </div>
         </div>
         <div class="top-bottom-margin animate">
-          <a href="days/">
-            <div class="on-hover-40 hide-text-block work-block">
-              <h2 class="text-color-white">ProjectName</h2>
-              <p class="size-small text-color-red">Short description</p>
-            </div>
-          </a>
+          <ul>
+            {projectData.map((project, index) => {
+              const { title, link, description } = project;
+              return (
+                <li key={index}>
+                  <Link>
+                    <div class="on-hover-40 hide-text-block work-block">
+                      <h2 class="text-color-white">{title}</h2>
+                      <p class="size-small text-color-red">{description}</p>
+                    </div>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </>
