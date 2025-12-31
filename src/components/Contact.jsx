@@ -37,21 +37,22 @@ export default function Contact() {
             <p>Feel free to reach out through any platforms bellow:</p>
 
             <div class="links">
+
               <a
                 class="on-hover-40 text-color-red"
-                href="https://www.facebook.com/mohit.shahu.566/"
+                href="https://github.com/mohitshahu108"
                 target="_blank"
                 rel="noreferrer"
               >
-                Facebook
+                Github
               </a>
               <a
                 class="on-hover-40 text-color-red"
-                href="https://www.instagram.com/shahu.mohit/"
+                href="https://www.linkedin.com/in/mohit-sahu-b712a7198/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Instagram
+                Linkedin
               </a>
               <a
                 class="on-hover-40 text-color-red"
@@ -59,15 +60,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Twitter
-              </a>
-              <a
-                class="on-hover-40 text-color-red"
-                href="https://www.linkedin.com/in/mohit-shahu-b712a7198/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Linkedin
+                X
               </a>
             </div>
           </div>
